@@ -6,4 +6,3 @@ ds.cpp - Fast data structures.
 
 TODO:
 - Add explanations.
-- Fix `void put(char *s)` in fastio.cpp, because `put("foo")` emits a compiler warning.
