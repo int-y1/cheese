@@ -1,8 +1,5 @@
 // input reading in C (fastest)
 #include <stdio.h>
-#ifdef __USE_MISC
-#define fread fread_unlocked
-#endif
 #define INPUT_SIZE (4<<20)
 int _i0=0;
 char _,_n,_i[INPUT_SIZE+5];
@@ -24,10 +21,6 @@ int main()
 // input+output reading in C (fastest, merged arrays)
 #include <stdio.h>
 #include <string.h>
-#ifdef __USE_MISC
-#define fread fread_unlocked
-#define fwrite fwrite_unlocked
-#endif
 #define INPUT_SIZE (4<<20)
 #define IO_SIZE (4<<20)
 int _i0=0,_o0=0;
@@ -54,10 +47,6 @@ int main()
 // input+output reading in C (slower, unmerged i/o arrays)
 #include <stdio.h>
 #include <string.h>
-#ifdef __USE_MISC
-#define fread fread_unlocked
-#define fwrite fwrite_unlocked
-#endif
 #define INPUT_SIZE (4<<20)
 #define OUTPUT_SIZE (2<<20)
 int _i0=0,_o0=0;
@@ -84,9 +73,6 @@ int main()
 // output in C (fastest), uncommon
 #include <stdio.h>
 #include <string.h>
-#ifdef __USE_MISC
-#define fwrite fwrite_unlocked
-#endif
 #define OUTPUT_SIZE (2<<20)
 int _o0=0;
 char _,__[12],_o[OUTPUT_SIZE+5];
